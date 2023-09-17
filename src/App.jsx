@@ -5,26 +5,32 @@ import Bookmark from './component/Bookmark/Bookmark'
 import { useState } from 'react'
 
 function App() {
-  const [totalTime, setTotalTime] = useState(0);
-  const [bookmarks, setBookmarks] = useState([]);
-  const [totalTaka, setTotalTaka] = useState(0);
-  
+  let [totalTime, setTotalTime] = useState(0);
+  let [bookmarks, setBookmarks] = useState([]);
+  let [totalTaka, setTotalTaka] = useState(0);
+  let [showWarning, setShowWarning] = useState(false); // State for showing the warning
 
-  const handleBookmark = (blog) => {
-    const newBookmark = [...bookmarks, blog];
+  let handleBookmark = (blog) => {
+    let newBookmark = [...bookmarks, blog];
     setBookmarks(newBookmark);
   }
 
-  const handleTime = (time) => {
-    const newTotalTime = totalTime + time;
-    setTotalTime(newTotalTime);
+  let handleTime = (time) => {
+    let newTotalTime = totalTime + time;
+    if (newTotalTime <= 20) {
+      setTotalTime(newTotalTime);
+      // Hide the warning if totalTime is within the limit
+      setShowWarning(false);
+    } else {
+      // Set totalTime to 0 and show the warning if it exceeds 20
+      setTotalTime(0);
+      setShowWarning(true);
+    }
   }
 
-  const handlePrice = (price) => {
- 
-      const newTotalPrice = totalTaka + price;
-      setTotalTaka(newTotalPrice);
-    
+  let handlePrice = (price) => {
+    let newTotalPrice = totalTaka + price;
+    setTotalTaka(newTotalPrice);
   }
 
   return (
@@ -41,11 +47,18 @@ function App() {
             </Blogs>
           </div>
           <div className='col-span-2 '>
-            <Bookmark bookmarks={bookmarks} totalTime={totalTime} totaltaka={totalTaka}></Bookmark>
+          {showWarning && (
+        <div className="text-red-500 text-center mt-4">
+          Warning: Total time exceeded 20!
+        </div>
+      )}
+            <Bookmark  bookmarks={bookmarks} totalTime={totalTime} totaltaka={totalTaka}></Bookmark>
           </div>
         </div>
       </div>
-     
+      
+      
+      
     </>
   )
 }

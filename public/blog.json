@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "cover": "https://i.ibb.co/TqtSj7j/C-Programming-Language.png",
+    "cover": "https://ibb.co.com/rycLF10",
     "title": "C Language:",
     "description": "C is a general-purpose programming language known for its low-level memory manipulation and high performance. ",
     "price": 49.99,
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "cover": "https://i.ibb.co/qjH1KnP/c.png",
+    "cover": "https://ibb.co.com/R6ZPtw5",
     "title": "C++ Language:",
     "description": "C++ is an extension of the C programming language with added features like object-oriented programming. ",
     "price": 29.99,
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "cover": "https://i.ibb.co/vdF50rN/Csharp.png",
+    "cover": "https://ibb.co.com/nDmS9w7",
     "title": "C# Language:",
     "description": "C# is a modern,object-oriented programming language developed by Microsoft. It's commonly used for building Windows applications.",
     "price": 79.99,
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "cover": "https://i.ibb.co/CVxRXmS/CSS3.png",
+    "cover": "https://ibb.co.com/jgdZJ22",
     "title": "CSS:",
     "description": "CSS is a style sheet language used to control the visual presentation of HTML elements. It's used to define the layout, colors, and styles of web pages, making them visually appealing.",
     "price": 39.99,
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "cover": "https://i.ibb.co/PZVhWwx/js.png",
+    "cover": "https://ibb.co.com/V9wgqRz",
     "title": "JavaScript Language:",
     "description": "JavaScript is a client-side scripting language used to enhance interactivity in web browsers",
     "price": 49.99,
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "cover": "https://i.ibb.co/BPB83D7/php.jpg",
+    "cover": "https://ibb.co.com/55rywnn",
     "title": "PHP Language:",
     "description": "PHP is a server-side scripting language designed for web development. It's used to create dynamic web pages, process forms, and interact with databases",
     "price": 34.99,
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "cover": "https://i.ibb.co/nRmDhJW/Python.png",
+    "cover": "https://ibb.co.com/Zhqpm0Y",
     "title": "Python Language:",
     "description": "python is a high-level, versatile programming language known for its readability and simplicity. It's used in web development, data analysis, artificial intelligence, and more.",
     "price": 89.99,
